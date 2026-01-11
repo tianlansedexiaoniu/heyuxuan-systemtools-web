@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>测试php+js调用cmd命令行</title>
+</head>
+
+
+
+<body>
+ <a href="#" onclick="win_run(); return false;">调用cmd</a>
+</body>
+
+
+	<script type="text/javascript">
+	function win_run(){ 
+	var cmd=new ActiveXObject("WScript.Shell");
+	cmd.run("cmd/c start C:/windows/explorer.exe");
+	cmd=null;
+	 window.setTimeout('window.close();',3000); 
+	}
+	</script>
+	</html>
