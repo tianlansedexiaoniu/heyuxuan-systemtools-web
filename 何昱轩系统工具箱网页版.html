@@ -1,163 +1,203 @@
 <!DOCTYPE html>
-<body style="overflow-x:hidden">
-<html>
-<table align="right">
-<tr>
-<td><a href="下载.html"><button style="height:32px;width:32px;background: url(img/叉.png)"></button></a></td>
-</tr>
-</table>
+<html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<p>何昱轩系统工具箱</p>
-<a href="html/调试.html"><button>调试入口</button><a>
+<title>xxx系统工具箱网页版</title>
+<link rel="icon" href="img/hyx.ico" type="image/x-icon">
+<style>
+hr{
+border:1 double #000000;
+width:100%;
+color:#000000;
+size:2;
+}
+</style>
+<script>
+function time(){
+var date=new Date();
+var year=date.getFullYear();
+var month=date.getMonth()+1;
+var day=date.getDate();
+var hour=date.getHours();
+hour=hour<10?"0"+hour:hour;
+var minute=date.getMinutes();
+minute=minute<10?"0"+minute:minute;
+var second=date.getSeconds();
+second=second<10?"0"+second:second;
+var currentTime=year+"-"+month+"-"+day+"  "+hour+":"+minute+":"+second;
+document.getElementById("time").innerHTML=currentTime;
+setInterval(time,1000);
+}
+function but4(){
+alert("当前已是最新版本");
+}
+function but2(){
+alert("版权归xxx所有,未经许可请勿擅自复制,否则需承担相应的法律责任\nxxx系统工具箱 2021~2022\nhyx win help HWH\nxxx科技有限公司(He Yuxuan Technology Co. , Ltd.)所有");
+}
+function but3(){
+alert("使用前需将电脑屏幕手动调亮");
+}
+</script>
+</head>
+<body style="overflow-x:hidden" onload="time()">
 <table align="right">
 <tr>
-<td><a href="html/setting.html"><button style="height:32px;width:32px;background: url(icon/16.png)"></button></a></td>
+<td><a href="下载.html"><button style="height:32px;width:32px;background:url(img/叉.png)"></button></a></td>
+</tr>
+</table>
+<p>xxx系统工具箱</p>
+<a href="html/调试.html"><button>调试入口</button></a>
+<table align="right">
+<tr>
+<td><a href="html/setting.html"><button style="height:32px;width:32px;background:url(icon/16.png)"></button></a></td>
 <td><button onclick="but4()"><font size=5>检查更新</font></button></td>
 </tr>
-<script>function but4() {alert("当前已是最新版本");}</script>
-</table><table>
-<button class="bu"type="button"><font size=5>最小化到托盘</font></button>
 </table>
-<title>何昱轩系统工具箱网页版</title>
-<link rel="icon" href="img/hyx.ico" type="image/x-icon">
 <table>
-<style>.but{float: left;margin-top: 100px;}button{border:none;οncοpy="return false;" oncut="return false;"}</style>
-<tr><td></td></tr>
-<table>
-<div style="text-align:center;"><button onclick="but1()" style="width:400px;height:100px"><font size=10>何昱轩系统工具箱</font></button></div>
-<script>function but1() {alert("网页版");}</script>
-</table><table>
-<script>function time(){var date=new Date();var year=date.getFullYear();var month=date.getMonth()+1;var day=date.getDate();var week=date.getDay();var hour =date.getHours();hour=hour<10?"0"+hour:hour;var minute =date.getMinutes();minute=minute<10?"0"+minute:minute;var second=date.getSeconds();second=second<10?"0"+second:second;var currentTime=year+"-"+month+"-"+day+"  "+hour+":"+minute+":"+second;setInterval("time()",1000);document.getElementById("time").innerHTML=currentTime;}</script>
-<body onload="time()">
-<div style="text-align:center;"><font>现在时间是:</font><font id="time"></font></div>
-</body>
+<tr>
+<td><button class="bu" type="button"><font size=5>最小化到托盘</font></button></td>
+</tr>
 </table>
+<div style="text-align:center;">
+<button onclick="alert('网页版')" style="width:400px;height:100px"><font size=10>xxx系统工具箱</font></button>
+</div>
+<div style="text-align:center;">
+<font>现在时间是:</font><font id="time"></font>
+</div>
 <table align="right">
 <tr>
 <td><p>windows自带的应用程序</p></td>
-<td><a href="html/windows自带的应用程序.html"><button onclick="()"style="height:32px;width:32px;background: url(icon/9.png)"></button><a></td>
+<td><a href="html/windows自带的应用程序.html"><button style="height:32px;width:32px;background:url(icon/9.png)"></button></a></td>
 </tr>
-</table><table>
+</table>
+<table>
 <tr>
 <td><p>关于</p></td>
-<td><button onclick="but2()"style="height:32px;width:32px;background: url(icon/1.png)"></button></td>
+<td><button onclick="but2()" style="height:32px;width:32px;background:url(icon/1.png)"></button></td>
 </tr>
-<script>function but2() {alert("版权归何昱轩所有,未经许可请勿擅自复制,否则需承担相应的法律责任\n何昱轩系统工具箱 2021~2022\nhyx win help HWH\n何昱轩科技有限公司(He Yuxuan Technology Co. , Ltd.)所有");}</script>
 </table>
 <table align="right">
 <tr>
 <td><p>注册表编辑器</p></td>
-<td><a href="regedit.exe://"><button style="height:32px;width:32px;background: url(icon/6.png)"></button></a></td>
+<td><a href="regedit.exe://"><button style="height:32px;width:32px;background:url(icon/6.png)"></button></a></td>
 </tr>
-</table><table>
+</table>
+<table>
 <tr>
 <td><p>安卓手机助手</p></td>
-<td><a href="html/安卓手机助手.html"><button style="height:32px;width:32px;background: url(icon/18.png)"></button></a></td>
+<td><a href="html/安卓手机助手.html"><button style="height:32px;width:32px;background:url(icon/18.png)"></button></a></td>
 </tr>
 </table>
 <table align="right">
 <tr>
 <td><p>文件解析器</p></td>
-<td><a href="taskmgr.exe://"><button style="height:32px;width:32px;background: url(icon/43.png)"></button></a></td>
+<td><a href="taskmgr.exe://"><button style="height:32px;width:32px;background:url(icon/43.png)"></button></a></td>
 </tr>
-</table><table>
+</table>
+<table>
 <tr>
 <td><p>文件保护</p></td>
-<td><a href="html/文件保护.html"><button style="height:32px;width:32px;background: url(icon/3.png)"></button></a></td>
+<td><a href="html/文件保护.html"><button style="height:32px;width:32px;background:url(icon/3.png)"></button></a></td>
 </tr>
 </table>
 <table align="right">
 <tr>
 <td><p>命令提示符</p></td>
-<td><a href="cmd.exe://"><button style="height:32px;width:32px;background: url(icon/5.png)"></button></a></td>
+<td><a href="cmd.exe://"><button style="height:32px;width:32px;background:url(icon/5.png)"></button></a></td>
 </tr>
-</table><table>
+</table>
+<table>
 <tr>
 <td><p>电源</p></td>
-<td><a href="html/电源.html"><button onclick="()"style="height:32px;width:32px;background: url(icon/4.png)"></button></a></td>
+<td><a href="html/电源.html"><button style="height:32px;width:32px;background:url(icon/4.png)"></button></a></td>
 </tr>
 </table>
 <table align="right">
 <tr>
 <td><p>计算机管理</p></td>
-<td><a href="compmgmt.msc://"><button style="height:32px;width:32px;background: url(icon/7.png)"></button></a></td>
-</tr>
-</table><table>
-<tr>
-<td><p>下载文件</p></td>
-<td><a href="html/下载文件.html"><button style="height:32px;width:32px;background: url(icon/45.png)"></button></td>
+<td><a href="compmgmt.msc://"><button style="height:32px;width:32px;background:url(icon/7.png)"></button></a></td>
 </tr>
 </table>
-<HR style="border:1 double #000000" width="100%"color=#000000 SIZE=2>
-<HR style="border:1 double #000000" width="100%"color=#000000 SIZE=2>
+<table>
+<tr>
+<td><p>下载文件</p></td>
+<td><a href="html/下载文件.html"><button style="height:32px;width:32px;background:url(icon/45.png)"></button></a></td>
+</tr>
+</table>
+<hr>
+<hr>
 <div style="text-align:center;"><h1 style="font-size:20px;">系统帮助类</h1></div>
 <table align="right">
 <tr>
 <td><p>硬盘文件备份</p></td>
-<td><button onclick="()"style="height:32px;width:32px;background: url(icon/15.png)"></button></td>
+<td><button style="height:32px;width:32px;background:url(icon/15.png)"></button></td>
 </tr>
-</table><table>
+</table>
+<table>
 <tr>
 <td><p>系统操作</p></td>
-<td><a href="html/系统操作.html"><button style="height:32px;width:32px;background: url(icon/44.png)"></button></a></td>
+<td><a href="html/系统操作.html"><button style="height:32px;width:32px;background:url(icon/44.png)"></button></a></td>
 </tr>
 </table>
 <table align="right">
 <tr>
 <td><p>激活Windows</p></td>
-<td><a href="html/激活Windows.html"><button style="height:32px;width:32px;background: url(icon/13.png)"></button></a></td>
+<td><a href="html/激活Windows.html"><button style="height:32px;width:32px;background:url(icon/13.png)"></button></a></td>
 </tr>
-</table><table>
+</table>
+<table>
 <tr>
 <td><p>日历</p></td>
-<td><button onclick="()"style="height:32px;width:32px;background: url(icon/11.png)"></button></td>
+<td><button style="height:32px;width:32px;background:url(icon/11.png)"></button></td>
 </tr>
 </table>
 <table align="right">
 <tr>
 <td><p>测试网络</p></td>
-<td><a href=;"html/测试网络.html"><button style="height:32px;width:32px;background: url(icon/40.png)"></button></td>
+<td><a href="html/测试网络.html"><button style="height:32px;width:32px;background:url(icon/40.png)"></button></a></td>
 </tr>
-</table><table>
+</table>
+<table>
 <tr>
 <td><p>查看系统硬件配置</p></td>
-<td><button onclick="()"style="height:32px;width:32px;background: url(icon/17.png)"></button></td>
+<td><button style="height:32px;width:32px;background:url(icon/17.png)"></button></td>
 </tr>
 </table>
 <table align="right">
 <tr>
 <td><p>高级账户设置</p></td>
-<td><a href="html/高级账户设置.html"><button onclick="()"style="height:32px;width:32px;background: url(icon/10.png)"></button></a></td>
+<td><a href="html/高级账户设置.html"><button style="height:32px;width:32px;background:url(icon/10.png)"></button></a></td>
 </tr>
-</table><table>
+</table>
+<table>
 <tr>
 <td><p>修复系统</p></td>
-<td><button onclick="()"style="height:32px;width:32px;background: url(icon/39.png)"></button></td>
+<td><button style="height:32px;width:32px;background:url(icon/39.png)"></button></td>
 </tr>
 </table>
 <table align="right">
 <tr>
 <td><p>手电筒</p></td>
-<td><a href="html/手电筒.html"><button style="height:32px;width:32px;background: url(icon/41.png)" onclick="but3()"></button><a></td>
-<script>function but3() {alert("使用前需将电脑屏幕手动调亮");}</script>
+<td><a href="html/手电筒.html"><button onclick="but3()" style="height:32px;width:32px;background:url(icon/41.png)"></button></a></td>
 </tr>
-</table><table>
+</table>
+<table>
 <tr>
 <td><p>网页浏览器</p></td>
-<td><a href="http://www.baidu.com" target="_blank"><button style="height:32px;width:32px;background: url(icon/21.png)"></button></a></td>
+<td><a href="http://www.baidu.com" target="_blank"><button style="height:32px;width:32px;background:url(icon/21.png)"></button></a></td>
 </tr>
 </table>
 <table align="right">
 <tr>
 <td><p>检查修复硬盘</p></td>
-<td><button onclick="()"style="height:32px;width:32px;background: url(icon/12.png)"></button></td>
-</tr>
-</table><table>
-<tr>
-<td><p>设置</p></td>
-<td><button onclick="()"style="height:32px;width:32px;background: url(icon/16.png)"></button></td>
+<td><button style="height:32px;width:32px;background:url(icon/12.png)"></button></td>
 </tr>
 </table>
-</html>
+<table>
+<tr>
+<td><p>设置</p></td>
+<td><button style="height:32px;width:32px;background:url(icon/16.png)"></button></td>
+</tr>
+</table>
 </body>
+</html>
